@@ -51,6 +51,11 @@ import java.util.List;
 @TeleOp(name = "Concept: TensorFlow Object Detection", group = "Concept")
 public class ConceptTensorFlowObjectDetection extends LinearOpMode {
 
+    private static final String TFOD_MODEL_ASSET = "Powerplay_BCDM.tflite";
+    private static final String[] LABELS = {
+            "Pixel"
+    };
+
     private static final boolean USE_WEBCAM = true;  // true for webcam, false for phone camera
 
     /**
